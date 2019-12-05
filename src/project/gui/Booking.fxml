@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="BookingController" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.gui.BookingController">
+    <stylesheets>
+        <URL value="@booking.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="Flightbtn" layoutX="25.0" layoutY="59.0" mnemonicParsing="false" onAction="#loadFlightRequirementspane" prefHeight="38.0" prefWidth="126.0" text="Flight" />
+                  <Button fx:id="SummaryFlightbtn" layoutX="25.0" layoutY="180.0" mnemonicParsing="false" onAction="#loadSummaryFlightpane" prefHeight="38.0" prefWidth="126.0" text="Customer Service" />
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="97.0" text="Booking service">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Button fx:id="Mainbookerbtn" layoutX="25.0" layoutY="314.0" mnemonicParsing="false" onAction="#loadMainbookerpane" prefHeight="38.0" prefWidth="126.0" text="Report" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
