@@ -23,7 +23,6 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
-
 /**
  * FXML Controller class
  *
@@ -69,6 +68,7 @@ public class FlightRequirementsController implements Initializable {
         
     }    
     
+    //gebeurt als op de knop search booking geklikt wordt
     @FXML
     private void loadOptionSingleFlightpane(ActionEvent event) 
     {
@@ -83,7 +83,7 @@ public class FlightRequirementsController implements Initializable {
       }
     }
     
-    /*@FXML
+    @FXML
     private void SearchBooking(ActionEvent event)
     {
         try
@@ -98,13 +98,20 @@ public class FlightRequirementsController implements Initializable {
             boolean CO2 = CBCO2.isSelected();
             boolean transfers = CBTransfers.isSelected();
             
+            /* aan de hand van deze info moet er dus nu gezocht worden naar een rij in de array uit de 
+            databaselayer, uit de tabel specific flight naar die voldoen aan de voorwaarden
+            
+            we geven de vluchten 3 dagen rond de vertrekdatum en 3 dagen rond de 'terugkeer datum'
+            gevonden rijen moeten dan in de volgende pane weergegeven worden*/
             
             
-            
+                     
         }
+        
+        
         catch (IOException ex) 
         {
             Logger.getLogger(FlightRequirementsController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }*/
+    }
 }
